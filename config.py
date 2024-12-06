@@ -5,10 +5,10 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")  # ⚠️ Required
-    API_HASH  = os.environ.get("API_HASH", "") # ⚠️ Required
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") # ⚠️ Required
-    FORCE_SUB = os.environ.get('FORCE_SUB', '') # ⚠️ Required
+    API_ID    = os.environ.get("26387127", "")  # ⚠️ Required
+    API_HASH  = os.environ.get("19718ab7acd97d0f71ada2807ddfe47a", "") # ⚠️ Required
+    BOT_TOKEN = os.environ.get("7713467145:AAH4U81n9mgM0ICZyXzT_dZeRzlRxAUdy5g", "") # ⚠️ Required
+    FORCE_SUB = os.environ.get('-1002289711537', '') # ⚠️ Required
     AUTH_CHANNEL = int(FORCE_SUB) if FORCE_SUB and id_pattern.search(
     FORCE_SUB) else None
    
@@ -17,8 +17,8 @@ class Config(object):
     DB_NAME  = os.environ.get("DB_NAME","SnowEncoderBot") 
 
     # Other Configs 
-    ADMIN = int(os.environ.get("ADMIN", "0")) # ⚠️ Required
-    LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', '0')) # ⚠️ Required
+    ADMIN = int(os.environ.get("5446367898", "0")) # ⚠️ Required
+    LOG_CHANNEL = int(os.environ.get('-1002317509038', '0')) # ⚠️ Required
     BOT_UPTIME = BOT_UPTIME  = time.time()
     START_PIC = os.environ.get("START_PIC", "https://telegra.ph//file/80a97e703fc3fdbcaefc5.jpg")
 
